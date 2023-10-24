@@ -1,0 +1,8 @@
+const excludeColumns  = {
+    marketWatch: ["divider", "id", "tokenid", "tokenid2", "lotsize", "segment", "ticksize", "optiontype" ],
+    tradeBook: ['price','security_type','segment','accountno','algoid', 'algocategory', 'discvol', 'goodtilldate', 'logtime', 'adm', 'brokerid', 'booktype', 'realtrade', 'client', 'currency', 'customtradeno', 'discvol', 'discvolrem', 'divider', 'entrydatetime', 'entrytime', 'errorcode', 'lar', 'lastmodtime', 'logtime', 'multiplier', 'nnffield', 'pan', 'reasoncode','timestamp1','token','tokenid2','traderid','uidnum','superadm','transcode','servername','remdiscvol','remvol','fillnum','volfilledtoday','tradedorderno'],
+    orderLogs: ['transcode','logtime','superadm','client','strategyid','uidnum','servername','errorcode','timestamp1','timestampns','reasoncode','settlor','userid','entrydatetime','discvolrem','discvol','customtradeno','accountno','multiplier','divider','lar','algocategory','algoid','pan','nnffield','lastmodtime','goodtilldate','entrytime','adm','totvolrem','traderid','brokerid','booktype'],
+    netPosition: ['client','currency', 'broksharing', 'comsharing', 'multiplier', 'usdrate', 'clientsharing', 'brokmtm', 'compmtm','traderid','brokerid','algoid','servername','nnffield','divider','date','Unnamed:0','accountno','netpositionno','segment','security_type','Unnamed: 0'],
+    spreadBook: ['Unnamed: 0','token1','token2','token3','date','client','id','client_id','exchange1','exchange2','exchange3','expirydate1','expirydate2','expirydate3','optiontype1','optiontype2','optiontype3','strikeprice1','strikeprice2','strikeprice3','symbol1','symbol2','symbol3','algoname','spreadbookno'],
+}
+export default excludeColumns

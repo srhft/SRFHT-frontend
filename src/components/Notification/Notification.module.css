@@ -1,0 +1,12 @@
+.poupNotification {
+    z-index: 9999 !important;
+}
+.poupNotification .notificationHeading {
+    font-weight: var(--pri_fontWeight);
+}
+.poupNotification .notificationImg {
+    width: 17%;
+}
+.poupNotification .message {
+    padding-left: 1rem;
+}

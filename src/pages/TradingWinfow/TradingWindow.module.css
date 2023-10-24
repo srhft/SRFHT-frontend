@@ -1,0 +1,89 @@
+.topSection{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+.actionWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.actionWrapper > div {
+    margin-bottom: 5px;
+}
+
+.gridContainer {
+    height: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    padding: 5px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column; 
+}
+.gridWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    cursor: grab;
+}
+.top p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.top svg{
+    cursor: pointer;
+}
+.layout {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.fullScreen {
+    position: fixed !important;
+    inset: 0;
+    z-index: 9999;
+  }
+  
+.container {
+    width: 100%;
+    min-height: calc(100dvh - 50px);
+}
+
+
+
+  /* Bropdown */
+  .menuButton {
+    position: relative;
+  }
+  
+  .menuDropdown {
+    position: absolute;
+    top: 100%;
+    left: -40%;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .hiddenStrategy {
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .hiddenStrategy:hover {
+    background-color: #f2f2f2;
+  }
+    /* Bropdown */
+  

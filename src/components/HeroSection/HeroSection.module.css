@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+  padding: 1rem 0.5rem;
+}
+.container * {
+  color: white;
+}
+.wrapper {
+  width: 1200px;
+  min-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.heroHeader {
+  margin: 1rem 0;
+}
+
+.heroSubheader {
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+.heroButton {
+  background: rgb(35,43,159);
+  background: linear-gradient(90deg, rgba(35,43,159,1) 0%, rgba(0,212,255,1) 100%);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1vmin;
+  font-weight: 300;
+}
+.right {
+  padding: 2rem 0;
+  width: 900px;
+  max-width: 100%;
+}
+.heroImage {
+  width: 100%;
+  box-shadow: 7px 11px 50px 1px rgba(255,255,255,0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+.heroImage:hover {
+  box-shadow: 7px 11px 50px 1px rgba(255,255,255,0.5);
+}
+.heroImage> img {
+  width: 100%;
+}
+.sell {
+  display: flex;
+  justify-content: flex-end; 
+}
+.sell > p{
+  background-color: #d75f5f;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+}
+.buy {   display: flex;}
+.buy > p {
+  background-color: #4ba34b;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+.bottom {
+  background-color: #171b24;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom * {color: white}
+.bottomWrapper {
+  width: 1200px;
+  min-width: 90%;
+}

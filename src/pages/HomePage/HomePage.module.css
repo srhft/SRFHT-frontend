@@ -1,0 +1,131 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: black;
+}
+
+.cards {
+    width: 1000px;
+    max-width: 90%;
+}
+
+
+.afterHeroSection {
+    background-color: #1c1c1e;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contentWrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .contentWrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contentWrapper p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  .contentWrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contentWrapper li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .ctaWrapper {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .ctaWrapper h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .ctaButton {
+    background-color: #5f3dc4;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: #7f5fc4;
+  }
+  
+  @media (max-width: 768px) {
+    .contentWrapper h2 {
+      font-size: 2rem;
+    }
+  
+    .contentWrapper p,
+    .contentWrapper li {
+      font-size: 1.1rem;
+    }
+  
+    .ctaWrapper h3 {
+      font-size: 1.8rem;
+    }
+  
+    .ctaButton {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+ 
+
+  .afterHeroSection .contentWrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .afterHeroSection .contentWrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .afterHeroSection .contentWrapper li {
+    text-align: center;
+    width: 45%;
+  }
+  
+  .afterHeroSection .contentWrapper p {
+    max-width: 600px;
+  }
+  
+  .afterHeroSection .ctaWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  

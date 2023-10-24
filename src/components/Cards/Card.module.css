@@ -1,0 +1,23 @@
+.container {
+    width: 320px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #192332;
+    border-radius: 1vmin;
+    overflow: hidden;
+}
+.btoom {
+    padding: 1rem;
+    color: black;
+}
+.btoom * {
+    color: white;
+}
+.top {
+    overflow: hidden;
+}
+.top> img {transition: all 0.3s ease-in-out;}
+.container:hover .top>img {
+    transform: scale(1.1);
+}
