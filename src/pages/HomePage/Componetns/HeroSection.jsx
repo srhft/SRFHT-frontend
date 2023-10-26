@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import MainSectionImg from "../../../assets/images/mainimage.jpeg"
+import MainSectionImg from "../../../assets/images/tradingIll.jpg"
 
 const Container = styled.div`
     display: flex;
@@ -16,6 +16,7 @@ const MainSection = styled.div`
     }
     img{
         width: 100%;
+        mix-blend-mode: multiply;
     }
 `
 
