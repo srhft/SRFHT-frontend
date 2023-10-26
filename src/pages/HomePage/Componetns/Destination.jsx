@@ -45,7 +45,7 @@ const Card = styled.div`
 const Destinations = () => {
   return (
     <Containe >
-      <h3>Now available in 46 countries!</h3>
+      <h3>Now available in 46 countries</h3>
       <Grid >
         <Card>
           <img src={image1} alt='destination-1' />
