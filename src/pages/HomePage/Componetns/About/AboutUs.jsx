@@ -11,16 +11,20 @@ const Wrapper = styled.div`
     flex-direction: column;
     gap: 5rem;
 `
-const TopSection = styled.div`
+export const TopSection = styled.div`
     padding-top: 100px;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    >h2{
+        font-size: 3rem;
+        margin: 0.5rem 0;
+    }
     >p{
-        text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: min(90%, 800px);
-        font-weight: 600;;
+        font-weight: 500;;
     }
 `
 
@@ -74,6 +78,7 @@ const About =() =>{
   <Container>
         <Wrapper>
             <TopSection>
+                <h2>About Us</h2>
                 <p>We pioneered the discount broking model in India.
                 Now, we are breaking ground with our technology.</p>
             </TopSection>

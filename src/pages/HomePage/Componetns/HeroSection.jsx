@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import MainSectionImg from "../../../assets/images/tradingIll.jpg"
 
+
 const Container = styled.div`
     display: flex;
     flex-direction: column;

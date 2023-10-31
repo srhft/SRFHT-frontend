@@ -192,7 +192,7 @@ function Header() {
                         Pricing
                         </SidebarListItem>  
                         
-                        <SidebarListItem isActive={isActive("Contectus")} to="/Contectus">
+                        <SidebarListItem isActive={isActive("contactus")} to="/contactus">
                         Contact Us
                         </SidebarListItem>  
                 </Mid>
