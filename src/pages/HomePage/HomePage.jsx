@@ -23,9 +23,9 @@ function HomePage() {
     <>
         <Header/>
         <Routes>
-            <Route path="/" element={<><HeroSection/><Destinations/><AboutUs/><Pricing/><Faq/><Contactus/></>}/>
-            <Route path="/about" element={<AboutUs/>}/>
-            <Route path="/pricing" element={<Pricing/>}/>
+            <Route path="/" element={<><HeroSection/><Destinations/><AboutUs/><Pricing/><Faq/></>}/>
+            {/* <Route path="/about" element={<AboutUs/>}/>
+            <Route path="/pricing" element={<Pricing/>}/> */}
             <Route path="/contactus" element={<Contactus/>}/>
             
         </Routes>

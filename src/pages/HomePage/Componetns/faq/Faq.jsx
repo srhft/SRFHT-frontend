@@ -7,7 +7,7 @@ import faqData from "./Faq.json";
 import SideSectionImg from "../../../../assets/images/image7.avif";
 
 import styled from "styled-components";
-import { TopSection } from '../About/AboutUs';
+// import { TopSection } from '../About/AboutUs';
 
 
 const Container = styled.div`
@@ -19,6 +19,22 @@ const Wrapper = styled.div`
   width: min(90%, 1200px);
   display: flex;
   flex-direction: column;
+`
+
+
+
+
+const TopSection = styled.div`
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    >h1{
+      margin-bottom: 2rem;
+    }
+    >p{
+      font-size: rem;
+    }
 `
 
 const SideSection = styled.div`
@@ -40,8 +56,8 @@ function Faq() {
     <Container>
       <Wrapper>
         <TopSection >
-          <h2>Frequently Asked Questions</h2>
-          <p>Stick on something? We're here to help with all your questions and answers in one place</p>
+          <h1 data-aos="flip-left">Frequently Asked Questions</h1>
+          <p data-aos="flip-right">Stick on something? We're here to help with all your questions and answers in one place</p>
         </TopSection>
         <SideSection>
           <div className='Box1'>
@@ -58,7 +74,7 @@ function Faq() {
                   )
               })}
           </div>
-          <div ><img src={SideSectionImg}/></div>
+          <div ><img src={SideSectionImg} data-aos="flip-right" data-aos-duration="3000" /></div>
       </SideSection>
       </Wrapper>
     </Container>

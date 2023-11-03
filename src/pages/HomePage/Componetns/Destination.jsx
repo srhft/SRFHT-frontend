@@ -88,7 +88,7 @@ const Card2 = styled.div`
 const Destinations = () => {
   return (
     <Containe >
-      <h3>Available in 43 countries!</h3>
+      <h3  data-aos="flip-left" data-aos-duration="3000">Available in 43 countries!</h3>
       <Grid >
         <Card>
           <img src={image1} alt='destination-1' />
@@ -116,8 +116,8 @@ const Destinations = () => {
       
       </Grid>
 
-      <h3>Pre- Built Trading Strategies</h3>
-      <p>The most popular trading strategy templates available at your fingertips.</p>
+      <h3  data-aos="flip-left">Pre- Built Trading Strategies</h3>
+      <p  data-aos="flip-right">The most popular trading strategy templates available at your fingertips.</p>
       <Grid>
         <Card2 >
           <div className="img"><img src={image4} alt='destination-4' /></div>  

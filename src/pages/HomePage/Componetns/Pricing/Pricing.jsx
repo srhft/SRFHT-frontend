@@ -53,9 +53,20 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 2rem 0;
+  padding-top: 8rem;
+
 `
 const Head = styled.div`
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  >h1{
+    margin-bottom: 2rem;
+  }
+  >h2 {
+    font-size: 2rem;
+  }
 `
 const Cards = styled.div`
   display: flex;
@@ -83,9 +94,12 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true)
 
   return (
-    <Container>
+    <Container id="pricing">
       <Head>
-      <h1>Our Pricing</h1>
+      <h1  data-aos="flip-left">Our Pricing</h1>
+      <h2  data-aos="flip-right">Event Registration Software Packages & Pricing </h2>
+      <span  data-aos="flip-left">Perfect for events in which attendees are required to register & pay to attend the event</span>
+      <p  data-aos="flip-right">e.g. Conference, Sports, SocialEvents & more.</p>
       <div className="toggle">
         <label>Annually </label>
         <div className="toggle-btn" >

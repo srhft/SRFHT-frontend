@@ -116,13 +116,22 @@ const SidebarListItem = styled(Link)`
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
   }
+`;
+const SidebarListItemm = styled.a`
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  color: ${(props) => (props.isActive ? '#dc4576' : '#584f61')};
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
-  .iconWrapper {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    svg {
-      fill: ${(props) => (props.isActive ? '#dc4576' : '#584f61')};
-      width: 20px;
-      height: 20px;
+  &:hover {
+    color: #333;
+    .iconWrapper {
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
   }
 `;
@@ -184,13 +193,13 @@ function Header() {
                         Register
                         </SidebarListItem>
 
-                        <SidebarListItem isActive={isActive("about")} to="/about">
+                        <SidebarListItemm isActive={isActive("about")} href="#aboutus">
                         AboutUs
-                        </SidebarListItem> 
+                        </SidebarListItemm> 
 
-                        <SidebarListItem isActive={isActive("pricing")} to="/pricing">
+                        <SidebarListItemm isActive={isActive("pricing")} href="#pricing">
                         Pricing
-                        </SidebarListItem>  
+                        </SidebarListItemm>  
                         
                         <SidebarListItem isActive={isActive("contactus")} to="/contactus">
                         Contact Us

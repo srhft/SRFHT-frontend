@@ -3,6 +3,10 @@
   height: max-content;
   background-color: #F5FAFF;
 }
+*{
+  scroll-behavior: smooth;
+
+}
 
 .container {
   width: 100vw;

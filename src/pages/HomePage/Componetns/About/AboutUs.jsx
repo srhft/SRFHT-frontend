@@ -1,9 +1,12 @@
 import styled from "styled-components"
-import image6 from '../../../../assets/images/image6.jpeg'
+import RingAnimation from "../../../../components/RingAnimation"
+//import image6 from '../../../../assets/images/image6.jpeg'
 
 const Container = styled.div`
+    overflow: hidden;
     display: flex;
     justify-content: center;
+    position: relative;
 `
 const Wrapper = styled.div`
     width: min(90%, 1200px);
@@ -39,43 +42,12 @@ const MidSection = styled.div`
         margin: 1rem 0;
     }
 `
-const People = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
-const PeoplesWrapper = styled.div`
-    margin-top: 3rem;
-    display: flex;
-    >* {
-        flex: 1;
-    }
-`
-const PeopleImg = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
-    >img{
-        border-radius: 50%;
-        width: 350px;
-        height: 350px;
-    }
-    >p{
-        font-size: 1.5rem;
-    }
-`
-const PeopleContent = styled.div`
-    >p{
-        margin: 1rem 0;
-    }
-`
+
 
 
 const About =() =>{
   return(
-  <Container>
+  <Container id="aboutus">
         <Wrapper>
             <TopSection>
                 <h2>About Us</h2>
@@ -94,26 +66,11 @@ const About =() =>{
                     <p>And yet, we are always up to something new every day. Catch up on the latest updates on our blog or see what the media is saying about us.</p>
                 </div>
             </MidSection>
-            <People>
-                <h2>People</h2>
-                <PeoplesWrapper>
-                    <PeopleImg>
-                    
-                        <img src={image6} class="datalet-bpr-guid-3158669" aria-hidden="true">
-                        </img>
-                        <p>Deepak Tiwary</p>
-                        <small>Founder, CEO</small>
-                    </PeopleImg>
-                    <PeopleContent>
-                        <p>Developer | C, C++,VHDL, Verilog | FPGA | Low Latency | HFT | High Frequency Trading System | NSE | BSE | MCX | CME | SGX | SHFE</p>
-                        <p>Talks about #bse, #hft, #nse, #sgx, and #sgxnifty</p>
-                        <p>HFT Investments  CDAC Pune</p>
-                        <p>Connect on Homepage / TradingQnA / Twitter</p>
-                    </PeopleContent>
-                </PeoplesWrapper>
-            </People>
         </Wrapper>
+        <RingAnimation style={{right: 0, top: 0}} />
   </Container> 
   )
-}
+            }
+
+
 export default About
